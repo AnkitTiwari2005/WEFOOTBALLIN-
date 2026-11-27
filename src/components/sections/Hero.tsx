@@ -129,7 +129,7 @@ export function Hero() {
             <Magnetic>
               <a
                 href="#games"
-                className="group relative inline-flex min-h-12 items-center gap-2 overflow-hidden rounded-full bg-volt px-7 py-3.5 text-sm font-bold text-pitch shadow-[0_0_35px_rgba(255,70,58,0.28)]"
+                className="group relative inline-flex min-h-12 items-center gap-2 overflow-hidden rounded-full bg-volt px-7 py-3.5 text-sm font-bold text-pitch shadow-[0_0_35px_rgba(198,255,61,0.28)]"
               >
                 <span className="absolute inset-0 origin-left scale-x-0 bg-chalk transition-transform duration-500 ease-expo group-hover:scale-x-100" />
                 <span className="relative flex items-center gap-2">

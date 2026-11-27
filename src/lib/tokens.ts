@@ -1,14 +1,14 @@
-// Single source of truth for the WEFOOTBALLIN' design system (Tunnel Crimson).
+// Single source of truth for the WEFOOTBALLIN' design system.
 export const colors = {
-  pitch: "#09090B",      // carbon asphalt base
-  turf: "#141418",       // matte charcoal slate surface
-  turfLight: "#1D1E24",  // elevated hover surface
-  line: "#262730",       // hairlines / pitch markings
-  volt: "#FF463A",       // Tunnel Crimson primary accent
-  voltDim: "#D9352A",    // crimson pressed
-  chalk: "#F7F5F0",      // warm off-white text
-  mute: "#9396A3",       // secondary text
-  flare: "#FBBF24",      // status only: Full / Waitlist / Card alert
+  pitch: "#080b09",      // near-black green: base
+  turf: "#101a13",       // raised surface
+  turfLight: "#16241a",  // elevated hover surface
+  line: "#1f2d23",       // hairlines / pitch markings
+  volt: "#C6FF3D",       // the one electric accent
+  voltDim: "#8fb82a",    // volt pressed
+  chalk: "#F2EEE3",      // warm off-white text
+  mute: "#9aa597",       // secondary text
+  flare: "#FF5A36",      // status only: Full / Cancelled / Miss
 } as const;
 
 export const fontSize = {

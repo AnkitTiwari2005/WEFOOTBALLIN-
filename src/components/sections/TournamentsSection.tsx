@@ -63,7 +63,7 @@ export function TournamentsSection() {
                   }}
                   className={`group relative rounded-2xl border p-5 text-left transition-all ${
                     isSelected
-                      ? "border-volt bg-turf shadow-[0_12px_40px_rgba(255,70,58,0.09)]"
+                      ? "border-volt bg-turf shadow-[0_12px_40px_rgba(198,255,61,0.08)]"
                       : "border-line bg-pitch/60 hover:border-chalk/30 hover:bg-turf/40"
                   }`}
                 >

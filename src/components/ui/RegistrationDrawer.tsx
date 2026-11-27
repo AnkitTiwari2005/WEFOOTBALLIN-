@@ -55,14 +55,14 @@ function TacticalPitch({
       </div>
 
       {/* Interactive 2D Pitch */}
-      <div className="relative aspect-[2/1] w-full bg-[#111115] p-2.5">
+      <div className="relative aspect-[2/1] w-full bg-[#0c160f] p-2.5">
         <svg viewBox="0 0 320 180" className="h-full w-full" aria-hidden>
-          <rect x="6" y="6" width="308" height="168" rx="4" fill="none" stroke="#262730" strokeWidth="1.5" />
-          <line x1="160" y1="6" x2="160" y2="174" stroke="#262730" strokeWidth="1.5" />
-          <circle cx="160" cy="90" r="28" fill="none" stroke="#262730" strokeWidth="1.5" />
-          <circle cx="160" cy="90" r="2.5" fill="#FF463A" />
-          <rect x="6" y="42" width="44" height="96" fill="none" stroke="#262730" strokeWidth="1.5" />
-          <rect x="270" y="42" width="44" height="96" fill="none" stroke="#262730" strokeWidth="1.5" />
+          <rect x="6" y="6" width="308" height="168" rx="4" fill="none" stroke="#1f2d23" strokeWidth="1.5" />
+          <line x1="160" y1="6" x2="160" y2="174" stroke="#1f2d23" strokeWidth="1.5" />
+          <circle cx="160" cy="90" r="28" fill="none" stroke="#1f2d23" strokeWidth="1.5" />
+          <circle cx="160" cy="90" r="2.5" fill="#C6FF3D" />
+          <rect x="6" y="42" width="44" height="96" fill="none" stroke="#1f2d23" strokeWidth="1.5" />
+          <rect x="270" y="42" width="44" height="96" fill="none" stroke="#1f2d23" strokeWidth="1.5" />
         </svg>
 
         {/* Existing Roster Dots */}
@@ -92,7 +92,7 @@ function TacticalPitch({
           transition={{ type: "spring", stiffness: 280, damping: 24 }}
           className="absolute z-10 flex -translate-x-1/2 -translate-y-1/2 flex-col items-center"
         >
-          <span className="relative flex h-8 w-8 items-center justify-center rounded-full border-2 border-volt bg-pitch font-mono text-[10px] font-bold text-volt shadow-[0_0_20px_rgba(255,70,58,0.5)]">
+          <span className="relative flex h-8 w-8 items-center justify-center rounded-full border-2 border-volt bg-pitch font-mono text-[10px] font-bold text-volt shadow-[0_0_20px_rgba(198,255,61,0.5)]">
             <span className="absolute inset-0 animate-ping rounded-full border border-volt opacity-60" />
             YOU
           </span>
@@ -328,10 +328,10 @@ export function RegistrationDrawer() {
                       {/* Stylized Vector QR Matrix */}
                       <div className="rounded-xl bg-chalk p-2">
                         <svg width="64" height="64" viewBox="0 0 32 32" aria-label="QR Code">
-                          <rect width="32" height="32" fill="#F7F5F0" />
+                          <rect width="32" height="32" fill="#F2EEE3" />
                           <path
                             d="M2 2h10v10H2zM4 4v6h6V4zM6 6h2v2H6zM20 2h10v10H20zM22 4v6h6V4zM24 6h2v2h-2zM2 20h10v10H2zM4 22v6h6v-6zM6 24h2v2H6zM14 4h4v2h-4zM14 8h2v4h-2zM14 14h6v4h-6zM22 14h4v2h-4zM18 20h6v2h-6zM26 18h4v6h-4zM14 24h4v6h-4zM20 26h8v4h-8z"
-                            fill="#09090B"
+                            fill="#080b09"
                           />
                         </svg>
                       </div>
