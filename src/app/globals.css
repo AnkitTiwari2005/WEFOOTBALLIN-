@@ -7,25 +7,25 @@
 }
 
 html {
-  background: #080b09;
+  background: #09090B;
   scroll-behavior: smooth;
 }
 
 body {
-  background: #080b09;
-  color: #F2EEE3;
+  background: #09090B;
+  color: #F7F5F0;
   font-family: var(--font-body), system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   overflow-x: clip;
 }
 
 ::selection {
-  background: #C6FF3D;
-  color: #080b09;
+  background: #FF463A;
+  color: #09090B;
 }
 
 :focus-visible {
-  outline: 2px solid #C6FF3D;
+  outline: 2px solid #FF463A;
   outline-offset: 3px;
   border-radius: 4px;
 }
@@ -36,14 +36,14 @@ body {
   height: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #080b09;
+  background: #09090B;
 }
 ::-webkit-scrollbar-thumb {
-  background: #1f2d23;
+  background: #262730;
   border-radius: 9999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #C6FF3D;
+  background: #FF463A;
 }
 
 /* Film grain: one static fixed SVG-noise layer (no per-frame cost). */
@@ -60,32 +60,32 @@ body::after {
 
 .floodlight {
   background:
-    radial-gradient(60% 50% at 50% -10%, rgba(198, 255, 61, 0.18), transparent 70%),
-    radial-gradient(45% 45% at 88% 12%, rgba(242, 238, 227, 0.08), transparent 70%),
-    radial-gradient(35% 35% at 12% 80%, rgba(198, 255, 61, 0.05), transparent 70%);
+    radial-gradient(60% 50% at 50% -10%, rgba(255, 70, 58, 0.17), transparent 70%),
+    radial-gradient(45% 45% at 88% 12%, rgba(247, 245, 240, 0.07), transparent 70%),
+    radial-gradient(35% 35% at 12% 80%, rgba(255, 70, 58, 0.06), transparent 70%);
 }
 
 .pitch-lines {
   background-image:
-    linear-gradient(#1f2d23 1px, transparent 1px),
-    linear-gradient(90deg, #1f2d23 1px, transparent 1px);
+    linear-gradient(#262730 1px, transparent 1px),
+    linear-gradient(90deg, #262730 1px, transparent 1px);
   background-size: 96px 96px;
   -webkit-mask-image: radial-gradient(75% 75% at 50% 45%, #000, transparent);
   mask-image: radial-gradient(75% 75% at 50% 45%, #000, transparent);
 }
 
 .outline-text {
-  -webkit-text-stroke: 2px #F2EEE3;
+  -webkit-text-stroke: 2px #F7F5F0;
   color: transparent;
 }
 
 .outline-text-volt {
-  -webkit-text-stroke: 1.5px #C6FF3D;
+  -webkit-text-stroke: 1.5px #FF463A;
   color: transparent;
 }
 
 .glass-panel {
-  background: linear-gradient(145deg, rgba(16, 26, 19, 0.85), rgba(8, 11, 9, 0.92));
+  background: linear-gradient(145deg, rgba(20, 20, 24, 0.88), rgba(9, 9, 11, 0.94));
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
 }

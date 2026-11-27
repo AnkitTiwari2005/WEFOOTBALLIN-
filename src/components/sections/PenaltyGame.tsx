@@ -10,9 +10,9 @@ const W = 960;
 const H = 540;
 const GOAL = { x: 170, y: 74, w: 620, h: 266 };
 const SPOT = { x: W / 2, y: 472 };
-const VOLT = "#C6FF3D";
-const CHALK = "#F2EEE3";
-const FLARE = "#FF5A36";
+const VOLT = "#FF463A";
+const CHALK = "#F7F5F0";
+const FLARE = "#FBBF24";
 const easeOut = (t: number) => 1 - Math.pow(1 - t, 3);
 
 const ZONES = {
@@ -396,37 +396,37 @@ export function PenaltyGame() {
       const s = sim.current;
       ctx.clearRect(0, 0, W, H);
 
-      // Stadium night sky + striped turf
+      // Stadium night sky + striped carbon turf
       const bg = ctx.createLinearGradient(0, 0, 0, H);
-      bg.addColorStop(0, "#080d0a");
-      bg.addColorStop(0.62, "#0d1710");
-      bg.addColorStop(1, "#132417");
+      bg.addColorStop(0, "#09090b");
+      bg.addColorStop(0.62, "#121216");
+      bg.addColorStop(1, "#18181d");
       ctx.fillStyle = bg;
       ctx.fillRect(0, 0, W, H);
 
       // Subtle turf mowing bands below goal line
       for (let i = 0; i < 6; i++) {
         if (i % 2 === 0) {
-          ctx.fillStyle = "rgba(198,255,61,0.025)";
+          ctx.fillStyle = "rgba(255,70,58,0.03)";
           ctx.fillRect(0, GOAL.y + GOAL.h + i * 35, W, 35);
         }
       }
 
       // Twin stadium floodlights
       const flLeft = ctx.createRadialGradient(180, 0, 10, 180, 0, 460);
-      flLeft.addColorStop(0, "rgba(198,255,61,0.16)");
-      flLeft.addColorStop(1, "rgba(198,255,61,0)");
+      flLeft.addColorStop(0, "rgba(255,70,58,0.16)");
+      flLeft.addColorStop(1, "rgba(255,70,58,0)");
       ctx.fillStyle = flLeft;
       ctx.fillRect(0, 0, W, H);
 
       const flRight = ctx.createRadialGradient(W - 180, 0, 10, W - 180, 0, 460);
-      flRight.addColorStop(0, "rgba(242,238,227,0.11)");
-      flRight.addColorStop(1, "rgba(242,238,227,0)");
+      flRight.addColorStop(0, "rgba(247,245,240,0.10)");
+      flRight.addColorStop(1, "rgba(247,245,240,0)");
       ctx.fillStyle = flRight;
       ctx.fillRect(0, 0, W, H);
 
       // Penalty area chalk markings
-      ctx.strokeStyle = "rgba(242,238,227,0.22)";
+      ctx.strokeStyle = "rgba(247,245,240,0.22)";
       ctx.lineWidth = 3;
       ctx.beginPath();
       ctx.moveTo(40, GOAL.y + GOAL.h);
@@ -448,7 +448,7 @@ export function PenaltyGame() {
 
       // Top-Bins Bonus Zone Indicators (subtle corners)
       ctx.save();
-      ctx.strokeStyle = "rgba(198,255,61,0.22)";
+      ctx.strokeStyle = "rgba(255,70,58,0.28)";
       ctx.setLineDash([4, 4]);
       ctx.lineWidth = 1.5;
       ctx.strokeRect(GOAL.x + 8, GOAL.y + 8, 104, 82);
@@ -507,7 +507,7 @@ export function PenaltyGame() {
         const isValid = px > GOAL.x && px < GOAL.x + GOAL.w && py > GOAL.y && py < GOAL.y + GOAL.h;
 
         ctx.save();
-        ctx.strokeStyle = isValid ? "rgba(198,255,61,0.5)" : "rgba(255,90,54,0.45)";
+        ctx.strokeStyle = isValid ? "rgba(255,70,58,0.65)" : "rgba(251,191,36,0.55)";
         ctx.setLineDash([6, 6]);
         ctx.lineWidth = 2;
         ctx.beginPath();
@@ -546,7 +546,7 @@ export function PenaltyGame() {
       ctx.rotate(tilt);
 
       // Legs
-      ctx.strokeStyle = "#080b09";
+      ctx.strokeStyle = "#09090B";
       ctx.lineWidth = 9;
       ctx.lineCap = "round";
       ctx.beginPath();
@@ -563,7 +563,7 @@ export function PenaltyGame() {
       ctx.fill();
 
       // Keeper Head
-      ctx.fillStyle = "#080b09";
+      ctx.fillStyle = "#09090B";
       ctx.beginPath();
       ctx.arc(0, -42, 13, 0, Math.PI * 2);
       ctx.fill();
@@ -631,7 +631,7 @@ export function PenaltyGame() {
       ctx.beginPath();
       ctx.arc(0, 0, 17 * b.s, 0, Math.PI * 2);
       ctx.fill();
-      ctx.fillStyle = "#080b09";
+      ctx.fillStyle = "#09090B";
       ctx.beginPath();
       for (let i = 0; i < 5; i++) {
         const ang = (i * Math.PI * 2) / 5;
